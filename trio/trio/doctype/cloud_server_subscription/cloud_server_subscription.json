@@ -6,7 +6,9 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_igdh",
-  "amended_from"
+  "total_amount",
+  "posting_date",
+  "company"
  ],
  "fields": [
   {
@@ -14,21 +16,27 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "amended_from",
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "company",
    "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Cloud Server Subscription",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "label": "Company",
+   "options": "Company"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-05 23:04:01.042787",
+ "modified": "2026-07-07 20:03:42.037127",
  "modified_by": "Administrator",
  "module": "Trio",
  "name": "Cloud Server Subscription",
